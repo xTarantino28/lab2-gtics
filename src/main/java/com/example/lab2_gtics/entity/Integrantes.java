@@ -12,7 +12,20 @@ import lombok.Setter;
 @Table(name ="integrantes")
 public class Integrantes {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "idintegrantes",nullable = false)
+    private Integer idintegrantes;
 
+    @Column(name = "nombre")
+    private String nombre;
+
+    @Column(name = "edad")
+    private int edad;
+
+
+    @Column(name = "artistas_idartistas")
+    private String artistas_idartistas;
 
 
 }
