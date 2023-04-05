@@ -23,9 +23,12 @@ public class Integrantes {
     @Column(name = "edad")
     private int edad;
 
+    @Column(name = "anhios_exp")
+    private Integer anhios_exp;
+
+    @Column(name = "rol")
+    private String rol;
 
     @Column(name = "artistas_idartistas")
-    private String artistas_idartistas;
-
-
+    private int artistas_idartistas;
 }
